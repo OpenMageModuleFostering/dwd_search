@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!--
+/*
+*
+* @category		DwD
+* @package		DwD_Search
+* @author		DwDesigner - Damian A. Pastorini - damian.pastorini@dwdesigner.com
+* @copyright	Copyright(c) 2012 DwDesigner (http://www.dwdesigner.com/)
+* @date:        24/01/2014
+*
+*/
+-->
+<layout version="0.1.0">
+
+    <catalogsearch_result_index>
+        <reference name="search_result_list">
+            <action ifconfig="dwd_search/general/featured_product_order_enabled" method="setDefaultDirection">
+                <param>desc</param>
+            </action>
+            <action ifconfig="dwd_search/general/featured_product_order_enabled" method="setSortBy">
+                <param>featured_product</param>
+            </action>
+        </reference>
+    </catalogsearch_result_index>
+
+    <catalogsearch_advanced_result>
+        <reference name="search_result_list">
+            <action ifconfig="dwd_search/general/featured_product_order_enabled" method="setDefaultDirection">
+                <param>desc</param>
+            </action>
+            <action ifconfig="dwd_search/general/featured_product_order_enabled" method="setSortBy">
+                <param>featured_product</param>
+            </action>
+        </reference>
+    </catalogsearch_advanced_result>
+
+</layout>

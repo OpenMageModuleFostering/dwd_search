@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<!--
+/*
+*
+* @category		DwD
+* @package		DwD_Search
+* @author		DwDesigner - Damian A. Pastorini - damian.pastorini@dwdesigner.com
+* @copyright	Copyright(c) 2012 DwDesigner (http://www.dwdesigner.com/)
+* @date:        24/01/2014
+*
+*/
+-->
+<config>
+    <modules>
+        <DwD_Search>
+            <version>0.1.2</version>
+        </DwD_Search>
+    </modules>
+    <global>
+        <helpers>
+            <dwd_search>
+                <class>DwD_Search_Helper</class>
+            </dwd_search>
+        </helpers>
+        <resources>
+            <dwd_search_setup>
+                <setup>
+                    <module>DwD_Search</module>
+                    <class>Mage_Catalog_Model_Resource_Setup</class>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </dwd_search_setup>
+        </resources>
+    </global>
+    <adminhtml>
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <dwd_search>
+                                            <title>DwD Search</title>
+                                        </dwd_search>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+    </adminhtml>
+    <default>
+        <dwd_search>
+            <general>
+                <featured_product_order_enabled>1</featured_product_order_enabled>
+            </general>
+        </dwd_search>
+    </default>
+    <frontend>
+        <layout>
+            <updates>
+                <dwd_search>
+                    <file>dwd_search.xml</file>
+                </dwd_search>
+            </updates>
+        </layout>
+    </frontend>
+</config>

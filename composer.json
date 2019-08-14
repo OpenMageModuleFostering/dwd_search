@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/DwD_Search",
+    "type": "magento-module",
+    "license": "Academic-Free-License-3.0",
+    "homepage": "",
+    "description": "Sort search and advanced search results by featured products.",
+    "authors": [
+    {
+        "name": "Damian A. Pastorini",
+        "email": "damian.pastorini@dwdeveloper.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<package>
+    <name>DwD_Search</name>
+    <version>0.1.2</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/afl-3.0.php">Academic Free License 3.0</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Sort search and advanced search results by featured products.</summary>
+    <description>&lt;h1&gt;DwDeveloper - Sort search and advanced search results by featured products&lt;/h1&gt;&#xD;
+&lt;h2&gt;Features&lt;/h2&gt;&#xD;
+&lt;p&gt;The extension will allow administrators to set products as featured, it will improve your catalog search results by adding an option to make the featured products be displayed as firsts items in the search and advanced search results.&lt;p&gt;&#xD;
+&lt;h3&gt;How the extension works?&lt;/h3&gt;&#xD;
+&lt;p&gt;&#xD;
+The extension will install / create a "featured_product" attribute, this what will allow administrators to set products as featured.&lt;br/&gt;&#xD;
+Additionally in the extension System / Configuration administrators will be able to enable the default sort by features products in the search and advanced search results, that will make all featured products be displayed as the first items in the results.&#xD;
+&lt;/p&gt;&#xD;
+&lt;h2&gt;Simple steps:&lt;/h2&gt;&#xD;
+&lt;ul&gt;&#xD;
+&lt;li&gt;Go to Catalog / Manage Products&lt;/li&gt;&#xD;
+&lt;li&gt;Edit some products and mark them as featured&lt;/li&gt;&#xD;
+&lt;li&gt;Go to System / Configuration / DwD Extensions / Search&lt;/li&gt;&#xD;
+&lt;li&gt;Enable the search&lt;/li&gt;&#xD;
+&lt;li&gt;Save the configuration&lt;/li&gt;&#xD;
+&lt;li&gt;Go to the frontend and do some searchs&lt;/li&gt;&#xD;
+&lt;li&gt;Enjoy!&lt;/li&gt;&#xD;
+&lt;/ul&gt;&#xD;
+&lt;h2&gt;Supported versions&lt;/h2&gt;&#xD;
+&lt;p&gt;Magento 1.8 to 1.9.x.&lt;/p&gt;&#xD;
+&lt;h2&gt;Support&lt;/h2&gt;&#xD;
+&lt;p&gt;For support, contact us at &lt;a href="mailto:info@dwdeveloper.com"&gt;info@dwdeveloper.com&lt;/a&gt;&#xD;
+&lt;/p&gt;</description>
+    <notes>DwD - Sort search and advance search results by featured products.</notes>
+    <authors><author><name>Damian A. Pastorini</name><user>MAG002087848</user><email>damian.pastorini@dwdeveloper.com</email></author></authors>
+    <date>2015-02-14</date>
+    <time>17:21:10</time>
+    <contents><target name="magecommunity"><dir name="DwD"><dir name="Search"><dir name="Helper"><file name="Data.php" hash="60ed7b21fc751a86b39c02c7f2929858"/></dir><dir name="etc"><file name="config.xml" hash="4ed2b3bd567131e00f8fb1254f958d79"/><file name="system.xml" hash="27ab153e83e57c5ade3987e48fc53b61"/></dir><dir name="sql"><dir name="dwd_search_setup"><file name="mysql4-install-0.1.0.php" hash="68e3006663c7257b16fa1eb082671d71"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="DwD_Search.xml" hash="349d8537cadf87bbff93b14ec4ed352b"/></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="dwd_search.xml" hash="611213c1ac962eec32a447fac98d75c8"/></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.3.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

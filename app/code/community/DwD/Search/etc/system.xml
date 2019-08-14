@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<!--
+/*
+*
+* @category		DwD
+* @package		DwD_Search
+* @author		DwDesigner - Damian A. Pastorini - damian.pastorini@dwdesigner.com
+* @copyright	Copyright(c) 2012 DwDesigner (http://www.dwdesigner.com/)
+* @date:        24/01/2014
+*
+*/
+-->
+<config>
+	<tabs>
+		<dwd_all translate="label" module="dwd_search">
+			<label>DwD Extensions</label>
+            <sort_order>200</sort_order>
+		</dwd_all>
+	</tabs>
+    <sections>
+        <dwd_search translate="label" module="dwd_search">
+            <label>Search</label>
+            <tab>dwd_all</tab>
+            <sort_order>200</sort_order>
+            <frontend_type>text</frontend_type>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <general translate="label">
+                    <label>General</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <featured_product_order_enabled>
+                            <label>Sort by featured products first?</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </featured_product_order_enabled>
+                    </fields>
+                </general>
+            </groups>
+        </dwd_search>
+    </sections>
+</config>

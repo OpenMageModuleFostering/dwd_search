@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!--
+/*
+*
+* @category		DwD
+* @package		DwD_Search
+* @author		DwDesigner - Damian A. Pastorini - damian.pastorini@dwdesigner.com
+* @copyright	Copyright(c) 2012 DwDesigner (http://www.dwdesigner.com/)
+* @date:        24/01/2014
+*
+*/
+-->
+<config>
+    <modules>
+        <DwD_Search>
+            <active>true</active>
+            <codePool>community</codePool>
+            <depends>
+                <Mage_Catalog/>
+                <Mage_CatalogSearch/>
+            </depends>
+        </DwD_Search>
+    </modules>
+</config>
